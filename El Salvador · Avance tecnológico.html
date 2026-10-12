@@ -20,19 +20,6 @@ h2{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.15;letter-spacing:-.025em;ma
 .lead{max-width:640px}
 .grad{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent;font-style:normal}
 
-/* nav */
-#bar{position:fixed;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--a),var(--b));transform:scaleX(0);transform-origin:0 50%;z-index:30}
-nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:calc(14px + env(safe-area-inset-top,0px)) 24px 14px;transition:background .3s,box-shadow .3s,backdrop-filter .3s}
-nav.s{background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--ln)}
-.logo{font-weight:800;color:var(--ink);text-decoration:none;letter-spacing:-.02em}
-.logo span{color:var(--b)}
-.links{display:flex;gap:28px;align-items:center}
-.links a{color:var(--mu);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
-.links a:hover{color:var(--ink)}
-#theme{border:1px solid var(--ln);background:var(--sf);color:var(--ink);width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:1rem;transition:transform .4s}
-#theme:hover{transform:rotate(180deg)}
-@media(max-width:620px){.links a{display:none}}
-
 /* hero */
 .hero{position:relative;min-height:92svh;display:grid;align-items:center;overflow:hidden;padding:120px 0 80px}
 .blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:var(--bo);animation:float 15s ease-in-out infinite;pointer-events:none}
